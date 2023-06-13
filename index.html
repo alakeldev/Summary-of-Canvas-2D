@@ -5,9 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Canvas</title>
+        <!-- 
+        What is Canvas: 
+        - it's allowing you to draw in browser directly without using any plugins like Java with its simple API
+        - it provides a meaning of drawing graphics via html and javascript on fly
+        - We can Say that Canvas is the container element of the drawing
+
+        Some use cases of Canvas:
+        - Games Graphics
+        - Data Visulaization
+        - Charts,Diagrams
+        - Animations
+        - Photo Manipulation
+        - Video,Audio
+
+        To start learning Canvas, it's important to be already finished from:        
+        - HTML
+        - CSS
+        - JS
+    -->
 </head>
 <body>
-    
+    <!-- 
+        1 - Canvas like image but without src + alt attributes and with closing tag
+        2 - Canvas accepts only two attributes width and height but you can use global attributes such as: id,class,style...
+        3 - Canvas can be styled with CSS
+        4 - Please be note that the rules you set inside CSS file for canvas are only applying on canvas container 
+            and it cannot be applying for the drawing and images inside canvas 
+        5 - You can set the width and height for canvas from CSS file  'BUT'  the best practise to set it from html file
+        6 - If you don't set width and height, the default values for Canvas are: Width => 300, Height => 150
+        7 - Canvas background-color default value is Transparent
+    -->
+    <img src="assets/images/snake.jpg" alt="snake" id="our-image">
+    <canvas width="600" height="600" id="my-canvas"></canvas>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
