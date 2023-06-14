@@ -1,8 +1,8 @@
 // Select the canvas Element
-let theCanvas = document.getElementById("my-canvas"),
+//let theCanvas = document.getElementById("my-canvas"),
 
 // Select the place that you want to draw inside
-    theContext = theCanvas.getContext("2d");
+    //theContext = theCanvas.getContext("2d");
 
 /*
 theGradient = theContext.createLinearGradient(0, 0, 100, 0);
@@ -221,5 +221,119 @@ theContext.strokeStyle = "#00F"
 theContext.lineWidth = 5;
 
 theContext.stroke(); 
+
+*/
+
+/*
+
+//Advanced Examples And new Methods 
+
+
+let theCanvas = document.getElementById("my-canvas"),
+
+    theContext = theCanvas.getContext("2d");
+
+theContext.beginPath();
+
+theContext.moveTo(100,100);    // starting points are from x = 100 and y = 100 and please be note these are starting points
+//theContext.moveTo(100,0);    // starting points are from x = 100 and y = 0 and please be note these are starting points
+//theContext.lineTo(0,0);         // the it's end way points are to x = 0 and y = 0 and please be note these are to end way points
+//theContext.lineTo(650,400);         the it's end way points are to x = 650 and y = 400 and please be note these are to end way points
+
+//below the four lines are drawing a design to see
+theContext.lineTo(100,300);         // the it's end way points are to x = 100 and y = 300 and please be note these are to end way points
+theContext.lineTo(300,300);         //the it's end way points are to x = 300 and y = 300 and please be note these are to end way points
+theContext.lineTo(400,200);         //the it's end way points are to x = 400 and y = 200 and please be note these are to end way points
+
+//theContext.lineTo(100,100);         //the it's end way points are to x = 100 and y = 100 and please be note these are to end way points
+
+// new Function to close your path to the start point it's extention to previous line:
+theContext.closePath();
+
+// color the borders and styling
+theContext.lineWidth = 8;
+theContext.strokeStyle = "red";
+
+// to draw the line
+theContext.stroke();
+
+// fill the shape 
+
+theContext.fillStyle = "green";  // you can choose from the three ways to fill
+theContext.fill();  // this method use to fill the shap with your set fill style if you if you don't set it it will set by default black
+
+*/
+
+
+
+
+/*
+// Start to draw Circle with Canvas
+
+let theCanvas = document.getElementById("my-canvas"),
+    theContext = theCanvas.getContext("2d");
+
+// begin the path
+theContext.beginPath();
+
+// border styling
+theContext.lineWidth = 8;
+theContext.strokeStyle = "red";
+
+
+// start the circle
+
+//theContext.arc(theCanvas.width / 2, theCanvas.height / 2, 150, 0, Math.PI );   // it needs (x = the circle center x , y = the circle center y , radius, start engle = 3 oclock, end angle = 2 * Math.PI)
+
+// draw circle anti clock wise
+
+//theContext.arc(theCanvas.width / 2, theCanvas.height / 2, 150, 0, 5.28319, true ); // by default the true is false
+
+// draw half of half circle
+theContext.arc(theCanvas.width / 2, theCanvas.height / 2, 150, 0, 0.5 * Math.PI);
+
+
+// Draw The Line
+theContext.stroke();
+
+/*
+    - 360 degree = full circle
+    - 1 radian = half circle  = 180 degree => 3.141592653589793       Math.PI
+    - radians => 2 radians = 360 degree   =>  6.283185307179586         Math.PI * 
+    - set the full circle variable => let theCircle = 2 * Math.PI // then you can use it easy to call half or 60% or 40% or 80% from the circle
+
+
+*/
+
+/*
+// Shadow Methods:
+
+let theCanvas = document.getElementById("my-canvas"),
+    theContext = theCanvas.getContext("2d");
+
+    
+    // Shadow Color: you can use color name or rgba
+    theContext.shadowColor = "rgba( 0 , 0 , 0 , .5)";
+
+    // Shadow Blur:
+    theContext.shadowBlur = 50;
+
+    //Control the place of shadow
+    //theContext.shadowOffsetX = 30;  // the default value is behind the element exactly so it's hide by default
+                                      //if you don't use blur so the shadow is a solid color
+    //theContext.shadowOffsetX = -30; // it accepts negative values to move to other side
+
+    //theContext.shadowOffsetY = -30;
+    //theContext.shadowOffsetY = 30;
+
+    theContext.fillStyle = "green";
+    theContext.fillRect(50, 50, 200, 100);
+
+
+    // Shadow Color:
+    theContext.shadowColor = "black"
+
+    // Shadow Blur:
+    theContext.shadowBlur = 20;
 
 */
