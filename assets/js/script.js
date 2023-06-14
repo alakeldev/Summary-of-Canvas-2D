@@ -337,3 +337,44 @@ let theCanvas = document.getElementById("my-canvas"),
     theContext.shadowBlur = 20;
 
 */
+
+
+
+// Transformation and save + restore 
+
+let theCanvas = document.getElementById("my-canvas"),
+    theContext = theCanvas.getContext("2d");
+
+    // the first and original box
+    theContext.fillStyle = "green";
+    theContext.fillRect(50, 50, 200, 100);
+    //theContext.fillRect(98, 98, 200, 100);
+
+    //here to save the clean state of context without any scale or anything
+    theContext.save(); 
+
+    //scale: is to extend width and height of the element
+    theContext.scale(2, 2);   //if you put (1, 1) that's meaning 100%, 100% so no change on element status
+                                // scale also will effect on x and y start point so you will move it because it's meaning 200%, 200%
+    theContext.fillStyle = "red";
+    theContext.fillRect(50, 50, 200, 100);
+
+    // Second box
+    // here the scale will effect on below rectangle because all the rectangle after initial the scale it's gonna effect it
+    // you can before the scale write a method ( go to before the scale) 
+
+    theContext.fillStyle = "yellow";
+    theContext.fillRect(50, 50, 200, 100);
+
+    // Restor the clean state without any scale or anything
+    theContext.restore();
+
+    // Third box
+    // trnsformation (translate) it will move the element from the place that the elemene is
+    theContext.translate(80, 80);  // it needs x, y from the place that you are (70,70) NOT from the canvas start,
+    //and it will increase 80, 80 or the 70,70
+    theContext.fillStyle = "yellow";
+    theContext.fillRect(70, 70, 200, 100);
+
+
+
