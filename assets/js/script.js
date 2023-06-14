@@ -339,7 +339,7 @@ let theCanvas = document.getElementById("my-canvas"),
 */
 
 
-
+/*
 // Transformation and save + restore 
 
 let theCanvas = document.getElementById("my-canvas"),
@@ -376,5 +376,54 @@ let theCanvas = document.getElementById("my-canvas"),
     theContext.fillStyle = "yellow";
     theContext.fillRect(70, 70, 200, 100);
 
+*/
 
+
+/*
+// Text Align And Direction
+
+let theCanvas = document.getElementById("my-canvas"),
+    theContext = theCanvas.getContext("2d");
+
+// if you want to change alpha of any element inside canvas you can use:
+
+theContext.globalAlpha = 0.5;   // from 0.0 to 1.0 and it's globaly for all your Canvas
+
+
+// to draw the line inside the canvas
+theContext.strokeStyle = "#AAA";
+theContext.lineWidth = 5;
+theContext.moveTo(300,0);
+theContext.lineTo(300, 400);
+theContext.stroke();
+
+theContext.direction = "rtl";  // to change the direction inside the canvas right to left // it will effect on start and end values of text align
+                                    // but it will not effect on left and right
+
+theContext.font = "30px Lora"
+theContext.fillStyle = "#F00"
+
+
+// now we set the properties of text align
+theContext.textAlign = "start";    // the default value is start, the start meaning it's starting from the place that you set it from fillText
+theContext.fillText("Start", 300, 50);   // it needs three things ("write the text", x , y);    
+
+
+
+theContext.textAlign = "end";  
+theContext.fillText("End", 300, 100); 
+
+
+
+theContext.textAlign = "center";  
+theContext.fillText("Center", 300, 150); 
+
+
+theContext.textAlign = "left";  
+theContext.fillText("left", 300, 200); 
+
+theContext.textAlign = "right";  
+theContext.fillText("right", 300, 250); 
+
+*/
 
