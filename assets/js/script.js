@@ -3,10 +3,8 @@
 
 // Select the place that you want to draw inside
     //theContext = theCanvas.getContext("2d");
-
 /*
 theGradient = theContext.createLinearGradient(0, 0, 100, 0);
-
 
 theGradient.addColorStop(0, "red"); 
 theGradient.addColorStop(1, "blue");
@@ -38,8 +36,6 @@ Choose Fill Style:
 // theContext.fillRect(0, 0, theCanvas.width, theCanvas.height);
 */
 
-
-
 /*
 2- By Gradients
     //theGradient = theContext.createLinearGradient(0, 0, 100, 100);   // it needs four things (x0, y0, x1, y1) if you set (0, 0, 0, 0)
@@ -62,8 +58,6 @@ Choose Fill Style:
 //theContext.fillRect(0, 0, theCanvas.width, theCanvas.height);
 */
 
-
-
 /*
 3 - By Pattern
 
@@ -80,8 +74,6 @@ theContext.fillStyle = thePattern;
 
 theContext.fillRect(0, 0, theCanvas.width, theCanvas.height);
 */
-
-
 
 /*
 //Here It will make Rectangle with stroke mode not fill mode
@@ -123,7 +115,6 @@ theContext.strokeText("Hello Canvas", 50, 50);  //it needs four things (youtext,
 theContext.lineWidth = 10;  // if you want to see the results of stroke make it without lineWidth:
 
 */
-
 
 /*
 
@@ -192,7 +183,6 @@ theContext.fillText("6", 570, h - 10)
 //theContext.lineTo(300,400);  //it needs two things (x,y), till path point place you want to draw
 
 
-
 // adjust style and line width
 
 //theContext.strokeStyle = "#00F"
@@ -201,7 +191,6 @@ theContext.fillText("6", 570, h - 10)
 // last thing is to draw the path 
 
 //theContext.stroke();  // default color is black
-
 
 
 /*
@@ -263,9 +252,6 @@ theContext.fillStyle = "green";  // you can choose from the three ways to fill
 theContext.fill();  // this method use to fill the shap with your set fill style if you if you don't set it it will set by default black
 
 */
-
-
-
 
 /*
 // Start to draw Circle with Canvas
