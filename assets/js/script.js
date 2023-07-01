@@ -338,7 +338,6 @@ let theCanvas = document.getElementById("my-canvas"),
 
 */
 
-
 /*
 // Transformation and save + restore 
 
@@ -426,71 +425,3 @@ theContext.textAlign = "right";
 theContext.fillText("right", 300, 250); 
 
 */
-
-
-
-/*
-Creat Smile Face, Advanced Example:
-
-
-let theCanvas = document.getElementById("my-canvas"),
-    theContext = theCanvas.getContext("2d");
-
-// Background Rectangle
-theContext.fillStyle = "#666";
-theContext.fillRect(0, 0, theCanvas.width, theCanvas.height);
-
-// Main Face Circle
-theContext.beginPath();
-theContext.fillStyle = "#ffff02";
-theContext.arc(theCanvas.width / 2, theCanvas.height / 2, 100, 0, Math.PI * 2);
-// the fill below will close your begin path of this circle, you cannot open new begin path till you close the previous one
-theContext.fill();
-
-
-// Mouth Circle
-theContext.beginPath();
-theContext.fillStyle = "#FFF";
-theContext.arc(theCanvas.width / 2, theCanvas.height / 2, 80, 0, Math.PI);
-
-// theContext.fill();
-theContext.stroke();    //another design for the mouth
-
-
-// left eye
-theContext.beginPath();
-theContext.fillStyle = "#000";
-theContext.arc((theCanvas.width / 2) - 40, (theCanvas.height / 2) - 40, 15, 0, Math.PI * 2 );
-theContext.fill();
-
-
-// right eye
-theContext.beginPath();
-theContext.fillStyle = "#000";
-theContext.arc((theCanvas.width / 2) + 40, (theCanvas.height / 2) - 40, 15, 0, Math.PI * 2 );
-theContext.fill();
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Draw Method
-//theContext.stroke();
